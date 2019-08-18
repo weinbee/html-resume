@@ -33,20 +33,27 @@ body{
   width: var(--page-width);
   height: var(--page-height);
   margin: 0;
-  font-family: "Open Sans", sans-serif; 
+  /* font-family: "Open Sans", sans-serif;  */
+  font-family: "Monaco", sans-serif;
   font-weight: 300;
   line-height: 1.3;
   color: #444;
-  hyphens: auto;
+  hyphens: none;
 }
 
-h1, h2, h3{
+h1, h2, h3, h4{
   margin: 0;
   color: #000;
 }
 
 li{
   list-style-type: none;
+}
+
+hr {
+  margin-top: 0.1in;
+  margin-left: 0.75in;
+  border-top: none;
 }
 
 #main{
@@ -62,8 +69,9 @@ li{
   width: var(--sidebar-width);
   height: 100%;
   padding: 0.6in var(--sidebar-horizontal-padding);
-  background-color: #f2f2f2;
+  /* background-color: #f2f2f2; */
   font-size: 8.5pt;
+  border-left: 2px dashed #ccc;
 }
 
 /* main */
@@ -76,7 +84,7 @@ li{
 #title{
   position: relative;
   left: 0.55in;
-  margin-bottom: 0.3in;
+  margin-bottom: 0.1in;
   line-height: 1.2;
 }
 
@@ -207,7 +215,7 @@ li{
   display: block;
   width: var(--decorator-outer-dim);
   height: var(--decorator-outer-dim);
-  border-radius: calc(var(--decorator-outer-dim) / 2);
+  /* border-radius: calc(var(--decorator-outer-dim) / 2); */
   background-color: #fff;
 }
 
@@ -219,8 +227,9 @@ li{
   display: block;
   width: calc(var(--decorator-outer-dim) - (var(--decorator-border-width) * 2));
   height: calc(var(--decorator-outer-dim) - (var(--decorator-border-width) * 2));
-  border-radius: calc((var(--decorator-outer-dim) - (var(--decorator-border-width) * 2)) / 2);
+  /* border-radius: calc((var(--decorator-outer-dim) - (var(--decorator-border-width) * 2)) / 2); */
   background-color: #555;
+  transform: translateX(15%);
 }
 
 .blocks:last-child .decorator{ /* slightly shortens it */
@@ -243,8 +252,13 @@ li{
   font-size: 9pt;
 }
 
+.details h4{
+  font-size: 8pt;
+  font-weight: 500;
+}
+
 .main-block:not(.concise) .details div{
-  margin: 0.18in 0 0.1in 0; 
+  margin: 0.18in 0 0.1in 0;
 }
 
 .main-block:not(.concise) .blocks:last-child .details div{
@@ -286,7 +300,8 @@ li{
 
 #main ul{
   padding-left: 0.07in;
-  margin: 0.08in 0;
+  margin: 0.1in 0;
+  margin-left: -5pt;
 }
 
 #main li{
@@ -296,8 +311,8 @@ li{
 /****** customize list symbol style ******/
 #main li::before{
   position: relative;
-  margin-left: -4.25pt;
-  content: '• ';
+  margin-left: -8pt;
+  content: '▪ ';
 }
 
 .details .concise ul{
@@ -325,7 +340,7 @@ li{
 }
 
 .side-block{
-  margin-top: 0.5in; 
+  margin-top: 0.5in;
 }
 
 #contact ul{
