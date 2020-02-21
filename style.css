@@ -29,12 +29,16 @@
   --main-blocks-title-icon-offset-left: -19pt;
 }
 
+ul li strong {
+  font-weight: bold;
+}
+
 body{
   width: var(--page-width);
   height: var(--page-height);
   margin: 0;
-  /* font-family: "Open Sans", sans-serif;  */
-  font-family: "Monaco", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  /* font-family: "Monaco", sans-serif; */
   font-weight: 300;
   line-height: 1.3;
   color: #444;
@@ -59,8 +63,8 @@ hr {
 #main{
   float: left;
   width: var(--main-width);
-  padding: 0.25in 0.25in 0 0.25in;
-  font-size: 7pt;
+  padding: 0.25in 0.25in 0 0.125in;
+  font-size: 9pt;
 }
 
 #sidebar{
@@ -89,7 +93,7 @@ hr {
 }
 
 #title h1{
-  font-weight: 300;
+  font-weight: 400;
   font-size: 18pt;
   line-height: 1.5;
 }
@@ -273,7 +277,7 @@ hr {
 
 .details .place{
   float: left;
-  font-size: 7.5pt;
+  font-size: 90%;
 }
 
 .details .location{
